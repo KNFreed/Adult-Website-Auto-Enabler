@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Adult-Website-Auto-Enabler
-// @version      1.2
+// @version      1.3
 // @description  Automatically gives adult permission on many websites
 // @author       Freed
 // @match        http*://*.toranoana.jp/*
@@ -26,21 +26,21 @@ function getCookie(cname) {
 
 // Adults Shop websites
 
-if (currLoc != "http*://*.toranoana.jp/*") {
+if (currLoc == "http*://*.toranoana.jp/*") {
     var adult = getCookie("adflg");
       if (adult != "0") {
         document.cookie = "adflg=0";
          location.reload();
 }
 
-if (currLoc != "http*://www.melonbooks.co.jp/*") {
+if (currLoc == "http*://www.melonbooks.co.jp/*") {
     var adult = getCookie("AUTH_ADULT");
       if (adult != "1") {
         document.cookie = "AUTH_ADULT=1";
          location.reload();
 }
 
-if (currLoc != "http*://www.suruga-ya.jp/*") {
+if (currLoc == "http*://www.suruga-ya.jp/*") {
     var adult = getCookie("adult");
       if (adult != "1") {
         document.cookie = "Aadult=1";
