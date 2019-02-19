@@ -4,6 +4,7 @@
 // @description  Automatically gives adult permission on suruga-ya
 // @author       Freed
 // @match        https://www.melonbooks.co.jp/*
+// @updateURL    https://github.com/KNFreed/Adult-Website-Auto-Enabler/raw/master/melonbooks.co.jp.user.js
 // ==/UserScript==
 
 function getCookie(cname) {
