@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Auto Adult Toranoana
-// @version      1.0
+// @version      1.1
 // @description  Automatically gives adult permission on Toranoana
 // @author       Freed
-// @match        https://toranoana.jp/*
+// @match        https://toranoana.jp/*, https://ec.toranoana.jp/*
 // @updateURL    https://github.com/KNFreed/Adult-Website-Auto-Enabler/raw/master/toranoana.jp.user.js
 // ==/UserScript==
 
