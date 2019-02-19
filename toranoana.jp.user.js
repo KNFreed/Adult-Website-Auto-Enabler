@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Auto Adult Toranoana
-// @version      1.1
+// @version      1.2
 // @description  Automatically gives adult permission on Toranoana
 // @author       Freed
 // @match        http*://*.toranoana.jp/*
