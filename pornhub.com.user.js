@@ -24,6 +24,6 @@ function getCookie(cname) {
 
 var adult = getCookie("accessAgeDisclaimerPH");
 if (adult != "1") {
-  document.cookie = "AUTH_ADULT=1";
+  document.cookie = "accessAgeDisclaimerPH=1";
     location.reload();
 }
