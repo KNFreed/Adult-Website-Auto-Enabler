@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto Adult Melonbooks
-// @version      1.0
-// @description  Automatically gives adult permission on suruga-ya
+// @version      1.1
+// @description  Automatically gives adult permission on Melonbooks
 // @author       Freed
 // @match        https://www.melonbooks.co.jp/*
 // @updateURL    https://github.com/KNFreed/Adult-Website-Auto-Enabler/raw/master/melonbooks.co.jp.user.js
