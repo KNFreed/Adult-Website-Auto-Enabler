@@ -4,7 +4,6 @@
 // @description  Automatically gives adult permission on suruga-ya
 // @author       Freed
 // @match        https://www.melonbooks.co.jp/*
-// @namespace https://greasyfork.org/users/214730
 // ==/UserScript==
 
 function getCookie(cname) {
