@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Adult-Website-Auto-Enabler
-// @version      1.5
+// @version      1.6
 // @description  Automatically gives adult permission on many websites
 // @author       Freed
 // @match        *://*/*
@@ -40,8 +40,10 @@ if (currLoc.includes("toranoana.jp")) {
 if (currLoc.includes("melonbooks.co.jp")) {
      if (getCookie("AUTH_ADULT") != "1") {
        document.cookie = `AUTH_ADULT=1; expires=${expdate}`;
-         document.cookie = `done=1; expires=${expdate}`;
           location.reload();
+} else if (getCookie("done") != "1") {
+    document.cookie = `AUTH_ADULT=1; expires=${expdate}`;
+    document.cookie = `done=1; expires=${expdate}`;
 }
 }
 
