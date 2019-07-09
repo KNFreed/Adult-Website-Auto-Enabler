@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Adult-Website-Auto-Enabler
-// @version      1.4
+// @version      1.5
 // @description  Automatically gives adult permission on many websites
 // @author       Freed
 // @match        *://*/*
@@ -31,25 +31,23 @@ var expdate = UTCtime.substring(0, 12) + (parseInt(UTCtime.substring(12, 16)) + 
 // Adults Shop websites
 
 if (currLoc.includes("toranoana.jp")) {
-    var toranoana = getCookie("adflg");
-      if (toranoana != "0") {
-        document.cookie = `adflg=0; expires=${expdate}`;
-         location.reload();
+     if (getCookie("adflg") != "0") {
+      document.cookie = `adflg=0; expires=${expdate}`;
+       location.reload();
 }
 }
 
 if (currLoc.includes("melonbooks.co.jp")) {
-    var melonbooks = getCookie("AUTH_ADULT");
-      if (melonbooks != "1") {
-        document.cookie = `AUTH_ADULT=1; expires=${expdate}`;
-         location.reload();
+     if (getCookie("AUTH_ADULT") != "1") {
+       document.cookie = `AUTH_ADULT=1; expires=${expdate}`;
+         document.cookie = `done=1; expires=${expdate}`;
+          location.reload();
 }
 }
 
 if (currLoc.includes("suruga-ya.jp")) {
-    var suruga = getCookie("adult");
-      if (suruga != "1") {
-        document.cookie = `adult=1; expires=${expdate}`;
-         location.reload();
+     if (getCookie("adult") != "1") {
+       document.cookie = `adult=1; expires=${expdate}`;
+        location.reload();
 }
 }
