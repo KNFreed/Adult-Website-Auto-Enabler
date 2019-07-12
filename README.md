@@ -1,2 +1,6 @@
 # Adult-Website-Auto-Enabler
-Collection of js scripts to automatically enable adult stuff on websites
+Extension that automatically creates +18 cookies.
+
+Icon from https://www.stockio.com/free-icon/cookie-4
+
+Manifest from me &  @KNtoyo. list from @KNtoyo
