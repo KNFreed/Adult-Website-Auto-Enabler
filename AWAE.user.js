@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Adult-Website-Auto-Enabler
-// @version      1.6
+// @version      1.7
 // @description  Automatically gives adult permission on many websites
 // @author       Freed
 // @match        *://*/*
@@ -28,7 +28,7 @@ var UTCtime = currentTime.toUTCString();
 var expdate = UTCtime.substring(0, 12) + (parseInt(UTCtime.substring(12, 16)) + 4) + UTCtime.substring(16, 29);
 
 
-// Adults Shop websites
+// Adults Shops
 
 if (currLoc.includes("toranoana.jp")) {
      if (getCookie("adflg") != "0") {
@@ -51,5 +51,14 @@ if (currLoc.includes("suruga-ya.jp")) {
      if (getCookie("adult") != "1") {
        document.cookie = `adult=1; expires=${expdate}`;
         location.reload();
+}
+}
+
+// Porn sites
+
+if (currLoc.includes("pornhub.com")) {
+     if (getCookie("accessAgeDisclaimerPH") != "1") {
+      document.cookie = `accessAgeDisclaimerPH=1; expires=${expdate}`;
+       location.reload();
 }
 }
