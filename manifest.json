@@ -1,0 +1,44 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "AWAE",
+  "version": "0.0.1",
+  "description": "A tool that will automatically enable +18 content",
+  "homepage_url": "https://github.com/KNFreed/Adult-Website-Auto-Enabler",
+  "author": "KNFreed",
+
+  "icons": {
+    "128": "icons-128.png",
+    "48": "icons-48.png",
+    "24": "icons-24.png"
+  },
+
+  "permissions": [
+        "activeTab",
+    "cookies",
+    "notifications",
+    "storage",
+    "<all_urls>"
+  ],
+
+
+  "browser_action": {
+    "default_icon": {
+      "128": "icons-128.png",
+      "40": "icons-40.png",
+      "20": "icons-20.png"
+    },
+    "default_title": "AWAE",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["AWAE.js"],
+    "persistent": true
+},
+
+"options_ui": {
+    "page": "list.html"
+}
+}
