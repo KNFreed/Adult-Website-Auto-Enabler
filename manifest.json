@@ -9,9 +9,9 @@
   "author": "KNFreed",
 
   "icons": {
-    "128": "icons-128.png",
-    "48": "icons-48.png",
-    "24": "icons-24.png"
+    "128": "icon-128.png",
+    "48": "icon-48.png",
+    "24": "icon-24.png"
   },
 
   "permissions": [
@@ -22,12 +22,16 @@
     "<all_urls>"
   ],
 
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["AWAE.js"]
+  }],
 
   "browser_action": {
     "default_icon": {
-      "128": "icons-128.png",
-      "40": "icons-40.png",
-      "20": "icons-20.png"
+      "128": "icon-128.png",
+      "40": "icon-40.png",
+      "20": "icon-20.png"
     },
     "default_title": "AWAE",
     "default_popup": "popup.html"
