@@ -45,6 +45,13 @@ if (currLoc.includes("suruga-ya.jp")) {
 }
 }
 
+if (currLoc.includes("denpasoft.com")) {
+     if (getCookie("isAnAdult") != "true") {
+       document.cookie = `isAnAdult=true; expires=${expdate}`;
+        location.reload();
+}
+}
+
 // Porn Sites
 
 if (currLoc.includes("pornhub.com")) {
@@ -64,6 +71,13 @@ if (currLoc.includes("youporn.com")) {
 if (currLoc.includes("www.porn.com")) {
      if (getCookie("dsm") != "warning-1") {
       document.cookie = `dsm=warning-1; expires=${expdate}`;
+       location.reload();
+}
+}
+
+if (currLoc.includes("tube8.com")) {
+     if (getCookie("t8disclaimer") != "1") {
+      document.cookie = `t8disclaimer=1; expires=${expdate}`;
        location.reload();
 }
 }

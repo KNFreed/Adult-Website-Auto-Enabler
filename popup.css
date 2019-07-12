@@ -22,24 +22,11 @@ hr {
 	display: block;
 }
 
-.footer {
-	font-size: 0.7rem;
-	padding: 12px 0;
-	display: block;
-	color: white;
-	background-color: #464d59;
-}
-
 .top p {
 	font-size: 1.3rem;
 	margin: 3px 3px 0;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
-}
-
-.footer p {
-	margin: 0;
-	font-size: 1.0rem;
 }
 
 .button {
